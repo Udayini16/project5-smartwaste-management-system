@@ -3,7 +3,6 @@ from roboflow import Roboflow
 import supervision as sv
 from supervision.detection.annotate import BoxAnnotator
 from supervision.draw.color import ColorPalette
-
 import cv2
 import numpy as np
 from PIL import Image
