@@ -1,1 +1,7 @@
-
+streamlit
+roboflow
+opencv-python-headless
+numpy
+pillow
+supervision
+tensorflow
