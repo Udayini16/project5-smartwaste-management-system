@@ -26,8 +26,7 @@ if uploaded_file:
     rf = Roboflow(api_key="NfDIqRxz2n6kOqEmL8If")
     project = rf.workspace().project("smart-waste-management-h5yif-mwcpw")
     model = project.version(1).model
-    result = model.predict(image_path, confidence=0.4, overlap=0.3).json()
-    st.write(result) 
+    result = model.predict(image_path, confidence=0.1, overlap=0.3).json()
 
     predictions = result["predictions"]
 
