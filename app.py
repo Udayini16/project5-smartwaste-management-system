@@ -27,6 +27,7 @@ if uploaded_file:
     project = rf.workspace().project("smart-waste-management-h5yif-mwcpw")
     model = project.version(1).model
     result = model.predict(image_path, confidence=0.4, overlap=0.3).json()
+    st.write(result) 
 
     predictions = result["predictions"]
 
